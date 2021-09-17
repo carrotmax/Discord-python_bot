@@ -1,22 +1,24 @@
 public class star {
-    public static void main(String[] args){
+    
+    public static void drawstar(int x, int y, int z){
         
-        int row = 1;
-        int size = 5;
-        while (row <= size){
-              int col = 0;
-              while (col <  row){
+        while (x <= y){
+              z = 0;
+              while (z <  x){
                   System.out.print('*');
-                  col = col + 1;
+                  z= z + 1;
               }
               System.out.println();
-              row = row + 1;
-
-
-
-
-        }
+              x = x + 1;}
 
 
     }
+    
+    public static void main(String[] args){
+        
+        drawstar(1, 5, 0);
+          }
+
+
+    
 }
